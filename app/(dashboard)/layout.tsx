@@ -29,7 +29,9 @@ export default function DashboardLayout({
     <html lang="es">
       <body>
         <Navbar/>
-        {children}
+        <main className="flex justify-center items-center">
+          {children}
+        </main>
       </body>
     </html>
   );
