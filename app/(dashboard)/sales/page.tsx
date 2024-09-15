@@ -56,7 +56,7 @@ export default function SalesSection() {
         const salesData = await getSales();
         setSales(salesData);
       } catch (error) {
-        setError(error.message);
+        setError('Error al cargar las ventas del mes');
       } finally {
         setLoading(false);
       }
@@ -100,7 +100,7 @@ export default function SalesSection() {
             className="p-2 bg-gray-400 rounded flex items-center font-medium text-white uppercase focus:outline-none hover:bg-gray-700 hover:shadow-none"
           >
             <CalendarIcon size={16} className="mr-1" />
-            {filter === "monthly" ? "mensual" : "semanal"}
+            {filter === "monthly" ? "mensual" : "semana"}
           </button>
         </div>
       </div>
