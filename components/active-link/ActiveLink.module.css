@@ -1,7 +1,10 @@
 .link {
-    @apply hover:underline hover:text-blue-400 mr-2 transition-all;
+    @apply hover:underline hover:text-gray-700 mr-2 transition-all uppercase;
+    color: white;
+    font-weight: 600
 }
 
 .active-link {
-    @apply text-blue-400;
+    @apply text-gray-700;
+    font-weight: 900;
 }
