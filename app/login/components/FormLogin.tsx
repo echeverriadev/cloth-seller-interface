@@ -42,7 +42,7 @@ export const FormLogin = () => {
       reset();
       router.push('/sales');
     } catch (error) {
-      console.log(error.message)
+      console.log('Error en la autenticación', error);
     }
     setLoading(false);
   };
